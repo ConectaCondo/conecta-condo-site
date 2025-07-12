@@ -1,0 +1,192 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F9F6E7;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #0A2E4F;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0A2E4F;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: 4px solid #FF6600;
+}
+
+.logo-container img {
+  max-width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+header nav a.button {
+  background-color: #FF6600;
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  color: white;
+  background-image: url('../img/FundoTela.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+.hero .button {
+  margin-top: 30px;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section.alt {
+  background-color: #ffffff;
+}
+
+.section h2 {
+  color: #0A2E4F;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #FF6600;
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+}
+
+.section h3 {
+  color: #0A2E4F;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 250px;
+}
+
+.text-block {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.text-block p {
+  margin-bottom: 15px;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FF6600;
+  color: white;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+  background-color: #e65c00;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.section-contato {
+  background-image: url('../img/Fundo2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.section-contato h2,
+.section-contato p {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+footer {
+  background-color: #0A2E4F;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-block p {
+    text-align: center;
+  }
+}
